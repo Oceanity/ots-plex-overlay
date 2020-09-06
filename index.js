@@ -1,4 +1,4 @@
-const WebUI = require("lib/WebUI");
+const WebUI = require("./lib/WebUI");
 
 function Init(options) {
     const ui = new WebUI(options);
