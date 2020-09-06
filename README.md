@@ -54,3 +54,41 @@ Once you have the overlay successfully running, navigate to where it is being se
 ![](images/readme/example-obs.gif?raw=true)
 
 The source will automatically fade out when you pause or stop media and fade in when you play again.
+
+# Styling
+
+You can alter some CSS variables in OBS's Custom CSS panel to alter how the overlay looks.
+
+### Defaults
+
+```css
+:root {
+    /* Background */
+    --background: none;
+
+    /* Text styling */
+    --font-family: "Open Sans", sans-serif;
+    --font-weight: bold;
+    --text-max-width: unset;
+    --text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0
+            #000, 1px 1px 0 #000;
+    --text-stroke: none;
+
+    /* Album art */
+    --cover-size: 85vh;
+    --cover-margin: 5vh;
+    --cover-background: rgba(0, 0, 0, 0.5);
+    --cover-radius: 5vh;
+
+    /* Track info */
+    --title-color: #fff;
+    --artist-color: #999;
+    --album-color: #ccc;
+    --time-color: #ccc;
+    --duration-color: #999;
+
+    /* progress bar */
+    --progress-bar-bg: rgba(0, 0, 0, 0.5);
+    --progress-bar-fg: red;
+}
+```

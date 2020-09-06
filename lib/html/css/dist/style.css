@@ -1,23 +1,33 @@
 :root {
+  /* Background */
+  --background: none;
+  /* Text styling */
+  --font-family: "Open Sans", sans-serif;
+  --font-weight: bold;
+  --text-max-width: unset;
   --text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
       -1px 1px 0 #000, 1px 1px 0 #000;
   --text-stroke: none;
-  --text-max-width: unset;
-  --background: none;
+  /* Album art */
+  --cover-size: 85vh;
+  --cover-margin: 5vh;
+  --cover-background: rgba(0, 0, 0, 0.5);
+  --cover-radius: 5vh;
+  /* Track info */
   --title-color: #fff;
   --artist-color: #999;
   --album-color: #ccc;
   --time-color: #ccc;
   --duration-color: #999;
+  /* progress bar */
   --progress-bar-bg: rgba(0, 0, 0, 0.5);
   --progress-bar-fg: red;
-  --cover-radius: 5vh;
 }
 
 body {
   font-size: 12vh;
-  font-family: "Open Sans";
-  font-weight: bold;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
   color: var(--text-fg);
   text-shadow: var(--text-shadow);
   background: var(--background);
@@ -40,12 +50,12 @@ p {
 #container #track-row #album-art {
   position: relative;
   overflow: hidden;
-  flex: 0 0 85vh;
-  margin: 5vh;
+  flex: 0 0 var(--cover-size);
+  margin: var(--cover-margin);
   border-radius: var(--cover-radius);
-  width: 85vh;
-  height: 85vh;
-  background-color: grey;
+  width: var(--cover-size);
+  height: var(--cover-size);
+  background: var(--cover-background);
 }
 #container #track-row #album-art img {
   display: none;
