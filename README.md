@@ -1,6 +1,6 @@
 # ots-plex-overlay
 
-Part of OceniTS, this is a browser-based overlay designed to be used with OBS that will show whatever media you are currently playing on your Plex server for viewers.
+Part of OceaniTS, this is a browser-based overlay designed to be used with OBS that will show whatever media you are currently playing on your Plex server for viewers.
 
 # Usage
 
