@@ -1,0 +1,27 @@
+{
+    "name": "ots-plex-overlay",
+    "description": "Displays currently playing Plex media on stream.",
+    "keywords": [
+        "twitch",
+        "obs",
+        "plex",
+        "overlay"
+    ],
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Oceanity/ots-plex-overlay.git"
+    },
+    "author": "Oceanity <dev@oceanity.net> (https://oceanity.net)",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1",
+        "lib": "file:lib",
+        "plex-api": "^5.3.1",
+        "socket.io": "^2.3.0"
+    }
+}

@@ -1,0 +1,118 @@
+:root {
+    --text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+        -1px 1px 0 #000, 1px 1px 0 #000;
+    --text-stroke: none;
+    --text-max-width: unset;
+    --background: none;
+    --title-color: #fff;
+    --artist-color: #999;
+    --album-color: #ccc;
+    --time-color: #ccc;
+    --duration-color: #999;
+    --progress-bar-bg: rgba(0, 0, 0, 0.5);
+    --progress-bar-fg: red;
+    --cover-radius: 5vh;
+}
+
+body {
+    font-size: 12vh;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: var(--text-fg);
+    text-shadow: var(--text-shadow);
+    background: var(--background);
+    -webkit-text-stroke: var(--text-stroke);
+}
+
+p {
+    margin: 0;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    #track-row {
+        display: flex;
+        flex-direction: row;
+
+        #album-art {
+            position: relative;
+            overflow: hidden;
+            flex: 0 0 85vh;
+            margin: 5vh;
+            border-radius: var(--cover-radius);
+            width: 85vh;
+            height: 85vh;
+            background-color: grey;
+
+            img {
+                display: none;
+                width: 100%;
+                height: 100%;
+
+                &[src] {
+                    display: block;
+                }
+            }
+        }
+
+        #track-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            white-space: nowrap;
+            overflow: hidden;
+
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: var(--text-max-width);
+            }
+
+            #track-title {
+                font-size: 18vh;
+                font-weight: 800;
+                color: var(--title-color);
+            }
+
+            #track-artist {
+                font-size: 14vh;
+                color: var(--artist-color);
+            }
+
+            #track-album {
+                font-size: 15vh;
+                color: var(--album-color);
+            }
+
+            #track-current {
+                font-size: 14vh;
+                color: var(--time-color);
+            }
+
+            #track-total {
+                font-size: 12vh;
+                color: var(--duration-color);
+            }
+        }
+    }
+
+    #progress-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: left;
+        width: 100vw;
+        height: 5vh;
+        background-color: var(--progress-bar-bg);
+
+        #current-progress {
+            display: block;
+            height: 100%;
+            background: var(--progress-bar-fg);
+        }
+    }
+}

@@ -1,0 +1,8 @@
+# Package Lock
+package-lock.json
+
+# Node Modules
+node_modules/
+
+# VS Code Settings
+.vscode/

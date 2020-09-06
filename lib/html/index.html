@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>OceaniTS Plex Overlay</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/dist/style.min.css">
+</head>
+
+<body id="ocn-nowplaying">
+    <div id="container">
+        <div id="track-row">
+            <div id="album-art">
+                <img id="art-image" />
+            </div>
+            <div id="track-info">
+                <p id="track-title"></p>
+                <p id="track-artist"></p>
+                <p id="track-album"></p>
+                <p id="track-time"><span id="track-current"></span><span id="track-total"></span></p>
+            </div>
+        </div>
+        <div id="progress-bar">
+            <div id="current-progress"></div>
+        </div>
+    </div>
+</body>
+<script src="js/lib/socket.io.js"></script>
+<script src="js/lib/jquery-3.4.1.min.js"></script>
+<script src="js/scripts.min.js"></script>
+
+</html>
