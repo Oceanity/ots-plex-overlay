@@ -23,13 +23,14 @@ const plexOverlay = require("ost-plex-overlay")({
 })
 ```
 
-## Advanced Setup (using existing Express app and custom port/path)
+## Advanced Setup (using existing Socket setup and listening on a new namespace)
 
 The following will create an overlay at http://localhost:3052/custom-plex-overlay/
 
 ```js
 const app = require("express")(),
-    http = require("http").createServer(app);
+    http = require("http").createServer(app),
+    io = require("socket.io")(http);
 
 http.listen(3052, () => {
     // HTTP callback code
@@ -38,6 +39,7 @@ http.listen(3052, () => {
 const PlexOverlay = require("ots-plex-overlay")({
     app: app,
     http: http,
+    io: io,
     path: "/custom-plex-overlay",
     plex: {
         hostname: "127.0.0.1",
