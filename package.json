@@ -15,6 +15,7 @@
     "author": "Oceanity <dev@oceanity.net> (https://oceanity.net)",
     "main": "index.js",
     "scripts": {
+        "test": "node index.js",
         "start": "node index.js"
     },
     "license": "MIT",
