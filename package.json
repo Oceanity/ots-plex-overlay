@@ -7,7 +7,7 @@
         "plex",
         "overlay"
     ],
-    "version": "1.1.4",
+    "version": "1.2.0",
     "repository": {
         "type": "git",
         "url": "git://github.com/Oceanity/ots-plex-overlay.git"
