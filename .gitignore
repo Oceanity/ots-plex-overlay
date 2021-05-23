@@ -6,3 +6,6 @@ node_modules/
 
 # VS Code Settings
 .vscode/
+
+# Covers folder
+lib/html/covers/
