@@ -24,6 +24,6 @@
         "color": "^3.1.2",
         "express": "^4.17.1",
         "plex-api": "^5.3.1",
-        "socket.io": "^2.3.0"
+        "socket.io": "^4.1.2"
     }
 }
