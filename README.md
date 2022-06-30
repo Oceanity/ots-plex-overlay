@@ -13,14 +13,14 @@ Before using Plex Overlay you will need to [download and install Plex Media Serv
 The following will create an overlay at http://localhost:3032/plex-overlay/
 
 ```js
-const plexOverlay = require("ost-plex-overlay")({
+const plexOverlay = require("ots-plex-overlay")({
     port: 3032,
-    plex {
+    plex: {
         hostname: "127.0.0.1",
         username: "YourPlexUsername",
-        token: "Y0uRPl3xT0kEN"
-    }
-})
+        token: "Y0uRPl3xT0kEN",
+    },
+});
 ```
 
 ## Advanced Setup (using existing Socket setup and listening on a new namespace)
